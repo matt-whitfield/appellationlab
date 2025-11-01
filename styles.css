@@ -1037,6 +1037,82 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
+   Partnership Section
+   ========================================================================== */
+
+.partnership {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border-top: 1px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
+}
+
+.partnership-container {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.partnership-label {
+  color: var(--medium-gray);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 32px;
+  font-family: var(--font-heading);
+}
+
+.partnership-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.partnership-logo {
+  flex: 0 0 auto;
+}
+
+.partnership-logo img {
+  height: 80px;
+  width: auto;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.partnership-logo img:hover {
+  opacity: 1;
+}
+
+.partnership-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.partnership-description {
+  color: var(--dark-gray);
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  font-family: var(--font-body);
+}
+
+.partnership-description strong {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.partnership-details {
+  color: var(--medium-gray);
+  font-size: 1rem;
+  line-height: 1.7;
+  font-family: var(--font-body);
+}
+
+/* ==========================================================================
    Social Proof Section
    ========================================================================== */
 
