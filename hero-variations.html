@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appellation Lab - Hero Section Variations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: #f5f5f5;
+            padding: 40px 20px;
+        }
+        .variation-container {
+            max-width: 1400px;
+            margin: 0 auto 80px;
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .variation-header {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--light-gray);
+        }
+        .variation-label {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.875rem;
+            margin-bottom: 12px;
+        }
+        .variation-title {
+            font-size: 1.5rem;
+            color: var(--secondary);
+            margin-bottom: 8px;
+        }
+        .variation-description {
+            color: var(--medium-gray);
+            line-height: 1.6;
+        }
+        .page-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .page-header h1 {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 16px;
+        }
+        .page-header p {
+            font-size: 1.125rem;
+            color: var(--medium-gray);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        /* Override hero section margins for this page */
+        .hero {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-header">
+        <h1>Hero Section Layout Variations</h1>
+        <p>Exploring different approaches to hero section design for Appellation Lab's wine region storytelling platform</p>
+    </div>
+
+    <!-- VARIATION 1: Full-Width Image Background with Centered Text Overlay -->
+    <div class="variation-container">
+        <div class="variation-header">
+            <span class="variation-label">Variation 1</span>
+            <h2 class="variation-title">Full-Width Background with Text Overlay</h2>
+            <p class="variation-description">
+                <strong>Approach:</strong> Vineyard image spans full viewport width as background, with text centered and overlaid. Creates immersive, magazine-style first impression.<br>
+                <strong>Best For:</strong> Maximum emotional impact, wine country atmosphere<br>
+                <strong>Trade-off:</strong> Text readability requires careful gradient/overlay treatment
+            </p>
+        </div>
+
+        <section class="hero" style="position: relative; min-height: 85vh; display: flex; align-items: center; justify-content: center; background: url('images/tim-mossholder-vineyards-lowres.jpg') center/cover no-repeat; border-radius: 8px; overflow: hidden;">
+            <!-- Dark gradient overlay for text readability -->
+            <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));"></div>
+
+            <div style="position: relative; z-index: 1; text-align: center; max-width: 900px; padding: 40px;">
+                <div class="hero-badge" style="background: rgba(255,255,255,0.95); color: var(--primary); display: inline-block; margin-bottom: 24px;">
+                    Co-Founded by Advanced Sommelier Kaleigh Brook
+                </div>
+                <h1 style="font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; font-weight: 600; color: white; margin-bottom: 24px; line-height: 1.2;">
+                    Every Wine Region Has a Story<br>
+                    <span style="background: linear-gradient(135deg, #CFB781 0%, #7D8B6C 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Written in Soil, Time, and Craft</span>
+                </h1>
+                <p style="font-size: 1.25rem; line-height: 1.7; color: rgba(255,255,255,0.95); margin-bottom: 32px; max-width: 700px; margin-left: auto; margin-right: auto;">
+                    We help you tell it. Custom digital platforms that transform your region's geology, heritage, and winemaking into interactive experiences that educate consumers, empower trade partners, and elevate your regional identity.
+                </p>
+                <a href="#platform" class="btn-primary" style="display: inline-block;">Explore the Platform</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- VARIATION 2: Split-Screen Layout (50/50) -->
+    <div class="variation-container">
+        <div class="variation-header">
+            <span class="variation-label">Variation 2</span>
+            <h2 class="variation-title">Split-Screen Layout (50/50)</h2>
+            <p class="variation-description">
+                <strong>Approach:</strong> Screen divided into two equal halves—left side vineyard image, right side text content. Clean, modern editorial feel.<br>
+                <strong>Best For:</strong> Balance between imagery and messaging, strong visual hierarchy<br>
+                <strong>Trade-off:</strong> Less immersive than full-width background
+            </p>
+        </div>
+
+        <section style="display: grid; grid-template-columns: 1fr 1fr; min-height: 600px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+            <!-- Image Side -->
+            <div style="background: url('images/tim-mossholder-vineyards-lowres.jpg') center/cover no-repeat;"></div>
+
+            <!-- Text Side -->
+            <div style="background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%); padding: 60px; display: flex; flex-direction: column; justify-content: center;">
+                <div class="hero-badge" style="align-self: flex-start; margin-bottom: 24px;">
+                    Co-Founded by Advanced Sommelier Kaleigh Brook
+                </div>
+                <h1 style="font-family: 'Cormorant Garamond', serif; font-size: 2.75rem; font-weight: 600; color: var(--secondary); margin-bottom: 20px; line-height: 1.2;">
+                    Every Wine Region Has a Story
+                    <span class="gradient-text" style="display: block; margin-top: 8px;">Written in Soil, Time, and Craft</span>
+                </h1>
+                <p style="font-size: 1.125rem; line-height: 1.7; color: var(--dark-gray); margin-bottom: 32px;">
+                    We help you tell it. Custom digital platforms that transform your region's geology, heritage, and winemaking into interactive experiences that educate consumers, empower trade partners, and elevate your regional identity.
+                </p>
+                <div>
+                    <a href="#platform" class="btn-primary" style="display: inline-block;">Explore the Platform</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- VARIATION 3: Asymmetric Layout (60/40 with Text Left) -->
+    <div class="variation-container">
+        <div class="variation-header">
+            <span class="variation-label">Variation 3</span>
+            <h2 class="variation-title">Asymmetric Layout (60/40 Text-First)</h2>
+            <p class="variation-description">
+                <strong>Approach:</strong> Text occupies 60% of width on left, image takes 40% on right. Prioritizes message over imagery while maintaining visual interest.<br>
+                <strong>Best For:</strong> Copy-focused storytelling, emphasizing value proposition<br>
+                <strong>Trade-off:</strong> Reduces visual impact of vineyard imagery
+            </p>
+        </div>
+
+        <section style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 60px; align-items: center; padding: 60px 40px; background: white; border-radius: 8px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+            <!-- Text Side (Wider) -->
+            <div>
+                <div class="hero-badge" style="margin-bottom: 24px;">
+                    Co-Founded by Advanced Sommelier Kaleigh Brook
+                </div>
+                <h1 style="font-family: 'Cormorant Garamond', serif; font-size: 2.75rem; font-weight: 600; color: var(--secondary); margin-bottom: 20px; line-height: 1.2;">
+                    Every Wine Region Has a Story
+                    <span class="gradient-text">Written in Soil, Time, and Craft</span>
+                </h1>
+                <p style="font-size: 1.125rem; line-height: 1.7; color: var(--dark-gray); margin-bottom: 32px;">
+                    We help you tell it. Custom digital platforms that transform your region's geology, heritage, and winemaking into interactive experiences that educate consumers, empower trade partners, and elevate your regional identity.
+                </p>
+                <a href="#platform" class="btn-primary" style="display: inline-block;">Explore the Platform</a>
+            </div>
+
+            <!-- Image Side (Narrower) -->
+            <div>
+                <img src="images/tim-mossholder-vineyards-lowres.jpg" alt="Wine Region Vineyard" style="width: 100%; border-radius: 8px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
+            </div>
+        </section>
+    </div>
+
+    <!-- VARIATION 4: Asymmetric Layout (40/60 Image-First) -->
+    <div class="variation-container">
+        <div class="variation-header">
+            <span class="variation-label">Variation 4</span>
+            <h2 class="variation-title">Asymmetric Layout (40/60 Image-First)</h2>
+            <p class="variation-description">
+                <strong>Approach:</strong> Image occupies 40% on left, text takes 60% on right. Image draws attention first, text provides detailed messaging.<br>
+                <strong>Best For:</strong> Wine-first visual hierarchy with ample copy space<br>
+                <strong>Trade-off:</strong> Current implementation in index.html (could be refined)
+            </p>
+        </div>
+
+        <section class="hero">
+            <div class="hero-visual" style="flex: 0 0 40%;">
+                <div class="hero-image">
+                    <img src="images/tim-mossholder-vineyards-lowres.jpg" alt="Wine Region Vineyard Landscape at Golden Hour" style="width: 100%; border-radius: 8px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);">
+                </div>
+            </div>
+            <div class="hero-content" style="flex: 0 0 60%;">
+                <div class="hero-badge">
+                    Co-Founded by Advanced Sommelier Kaleigh Brook
+                </div>
+                <h1 class="hero-title">
+                    Every Wine Region Has a Story
+                    <span class="gradient-text">Written in Soil, Time, and Craft</span>
+                </h1>
+                <p class="hero-subtitle">
+                    We help you tell it. Custom digital platforms that transform your region's geology, heritage, and winemaking into interactive experiences that educate consumers, empower trade partners, and elevate your regional identity.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <!-- VARIATION 5: Stacked Layout with Minimal Text Overlay -->
+    <div class="variation-container">
+        <div class="variation-header">
+            <span class="variation-label">Variation 5</span>
+            <h2 class="variation-title">Stacked Layout with Minimal Overlay</h2>
+            <p class="variation-description">
+                <strong>Approach:</strong> Large vineyard image on top, minimal text overlay at bottom. Detailed copy lives below the image. Lets wine country imagery breathe.<br>
+                <strong>Best For:</strong> Visual-first storytelling, clean modern aesthetic<br>
+                <strong>Trade-off:</strong> Requires scroll to read full value proposition
+            </p>
+        </div>
+
+        <section style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+            <!-- Image with Minimal Overlay -->
+            <div style="position: relative; height: 500px; background: url('images/tim-mossholder-vineyards-lowres.jpg') center/cover no-repeat;">
+                <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding: 60px 40px 40px;">
+                    <div class="hero-badge" style="background: rgba(255,255,255,0.95); color: var(--primary); display: inline-block; margin-bottom: 16px;">
+                        Co-Founded by Advanced Sommelier Kaleigh Brook
+                    </div>
+                    <h1 style="font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 600; color: white; line-height: 1.2; margin: 0;">
+                        Every Wine Region Has a Story<br>
+                        <span style="background: linear-gradient(135deg, #CFB781 0%, #7D8B6C 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Written in Soil, Time, and Craft</span>
+                    </h1>
+                </div>
+            </div>
+
+            <!-- Text Content Below -->
+            <div style="background: white; padding: 40px;">
+                <p style="font-size: 1.25rem; line-height: 1.7; color: var(--dark-gray); margin-bottom: 32px; max-width: 800px;">
+                    We help you tell it. Custom digital platforms that transform your region's geology, heritage, and winemaking into interactive experiences that educate consumers, empower trade partners, and elevate your regional identity.
+                </p>
+                <a href="#platform" class="btn-primary" style="display: inline-block;">Explore the Platform</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- VARIATION 6: Cards Layout with Image + Quick Value Props -->
+    <div class="variation-container">
+        <div class="variation-header">
+            <span class="variation-label">Variation 6</span>
+            <h2 class="variation-title">Modular Cards Layout</h2>
+            <p class="variation-description">
+                <strong>Approach:</strong> Hero combines large vineyard image with immediate value proposition cards below. Shows both aspiration and concrete benefits immediately.<br>
+                <strong>Best For:</strong> Combining emotional appeal with quick benefit scanning<br>
+                <strong>Trade-off:</strong> More complex layout, requires more vertical space
+            </p>
+        </div>
+
+        <section style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+            <!-- Top: Image with Title Overlay -->
+            <div style="position: relative; height: 450px; background: url('images/tim-mossholder-vineyards-lowres.jpg') center/cover no-repeat;">
+                <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.5));"></div>
+                <div style="position: relative; z-index: 1; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 40px;">
+                    <div class="hero-badge" style="background: rgba(255,255,255,0.95); color: var(--primary); margin-bottom: 20px;">
+                        Co-Founded by Advanced Sommelier Kaleigh Brook
+                    </div>
+                    <h1 style="font-family: 'Cormorant Garamond', serif; font-size: 3.25rem; font-weight: 600; color: white; line-height: 1.2; max-width: 800px;">
+                        Every Wine Region Has a Story
+                        <span style="display: block; margin-top: 12px; background: linear-gradient(135deg, #CFB781 0%, #7D8B6C 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Written in Soil, Time, and Craft</span>
+                    </h1>
+                </div>
+            </div>
+
+            <!-- Bottom: Quick Value Cards -->
+            <div style="background: white; padding: 40px;">
+                <p style="text-align: center; font-size: 1.125rem; color: var(--dark-gray); max-width: 700px; margin: 0 auto 40px; line-height: 1.7;">
+                    We help you tell it. Custom digital platforms that transform your region's geology, heritage, and winemaking into interactive experiences.
+                </p>
+
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 32px;">
+                    <div style="text-align: center; padding: 24px; background: var(--light-gray); border-radius: 8px;">
+                        <h3 style="color: var(--primary); font-size: 1.125rem; margin-bottom: 8px; font-weight: 600;">Educate Consumers</h3>
+                        <p style="color: var(--medium-gray); font-size: 0.9375rem; line-height: 1.6; margin: 0;">Interactive terroir and varietal education</p>
+                    </div>
+                    <div style="text-align: center; padding: 24px; background: var(--light-gray); border-radius: 8px;">
+                        <h3 style="color: var(--primary); font-size: 1.125rem; margin-bottom: 8px; font-weight: 600;">Empower Trade</h3>
+                        <p style="color: var(--medium-gray); font-size: 0.9375rem; line-height: 1.6; margin: 0;">Professional tools and certification programs</p>
+                    </div>
+                    <div style="text-align: center; padding: 24px; background: var(--light-gray); border-radius: 8px;">
+                        <h3 style="color: var(--primary); font-size: 1.125rem; margin-bottom: 8px; font-weight: 600;">Elevate Identity</h3>
+                        <p style="color: var(--medium-gray); font-size: 0.9375rem; line-height: 1.6; margin: 0;">Showcase your region's unique story</p>
+                    </div>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="#platform" class="btn-primary" style="display: inline-block;">Explore the Platform</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- VARIATION 7: Cinematic Wide with Bottom-Aligned Text -->
+    <div class="variation-container">
+        <div class="variation-header">
+            <span class="variation-label">Variation 7</span>
+            <h2 class="variation-title">Cinematic Wide Format</h2>
+            <p class="variation-description">
+                <strong>Approach:</strong> Ultra-wide vineyard panorama with text anchored at bottom-left. Film-poster aesthetic, maximum wine country atmosphere.<br>
+                <strong>Best For:</strong> Premium, luxury positioning, editorial sophistication<br>
+                <strong>Trade-off:</strong> Less readable on mobile without significant adaptation
+            </p>
+        </div>
+
+        <section style="position: relative; height: 600px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); background: url('images/tim-mossholder-vineyards-lowres.jpg') center/cover no-repeat;">
+            <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 60%);"></div>
+
+            <div style="position: absolute; bottom: 40px; left: 40px; max-width: 600px;">
+                <div class="hero-badge" style="background: rgba(255,255,255,0.95); color: var(--primary); margin-bottom: 20px; display: inline-block;">
+                    Co-Founded by Advanced Sommelier Kaleigh Brook
+                </div>
+                <h1 style="font-family: 'Cormorant Garamond', serif; font-size: 3.25rem; font-weight: 600; color: white; line-height: 1.15; margin-bottom: 20px;">
+                    Every Wine Region Has a Story
+                    <span style="display: block; margin-top: 8px; background: linear-gradient(135deg, #CFB781 0%, #7D8B6C 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Written in Soil, Time, and Craft</span>
+                </h1>
+                <p style="font-size: 1.125rem; line-height: 1.7; color: rgba(255,255,255,0.95); margin-bottom: 24px;">
+                    We help you tell it. Custom digital platforms that transform your region's geology, heritage, and winemaking into interactive experiences.
+                </p>
+                <a href="#platform" class="btn-primary" style="display: inline-block;">Explore the Platform</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Comparison Summary -->
+    <div class="variation-container" style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); color: white;">
+        <div style="text-align: center;">
+            <h2 style="font-size: 2rem; margin-bottom: 24px; color: white;">Recommendation Summary</h2>
+            <div style="max-width: 800px; margin: 0 auto; line-height: 1.8; font-size: 1.0625rem;">
+                <p style="margin-bottom: 16px;">
+                    <strong style="color: #CFB781;">For Maximum Wine Country Atmosphere:</strong> Variations 1, 5, or 7 (full-width backgrounds with overlays)
+                </p>
+                <p style="margin-bottom: 16px;">
+                    <strong style="color: #CFB781;">For Balanced Readability + Impact:</strong> Variations 2 or 3 (split-screen layouts)
+                </p>
+                <p style="margin-bottom: 16px;">
+                    <strong style="color: #CFB781;">For Immediate Value Communication:</strong> Variation 6 (modular cards showing benefits)
+                </p>
+                <p style="margin-bottom: 0;">
+                    <strong style="color: #CFB781;">Current Implementation:</strong> Variation 4 (safe choice but less impactful than alternatives)
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
