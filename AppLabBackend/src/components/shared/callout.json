@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_shared_callouts",
+  "info": {
+    "displayName": "Callout"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    },
+    "calloutType": {
+      "type": "enumeration",
+      "enum": [
+        "tip",
+        "info"
+      ]
+    }
+  },
+  "config": {}
+}

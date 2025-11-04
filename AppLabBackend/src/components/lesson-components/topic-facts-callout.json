@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_lesson_components_topic_facts_callouts",
+  "info": {
+    "displayName": "Topic Facts Callout"
+  },
+  "options": {},
+  "attributes": {
+    "emoji": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "content": {
+      "type": "blocks"
+    },
+    "note": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

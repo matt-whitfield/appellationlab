@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "admin_enrollment_management",
+  "info": {
+    "singularName": "admin-enrollment",
+    "pluralName": "admin-enrollments",
+    "displayName": "Admin Enrollment Management",
+    "description": "Virtual content type for admin enrollment management endpoints"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "enrollmentType": {
+      "type": "string"
+    },
+    "data": {
+      "type": "json"
+    }
+  }
+}

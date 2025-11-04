@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_shared_images",
+  "info": {
+    "displayName": "image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "aspectRatio": {
+      "type": "enumeration",
+      "enum": [
+        "widescreen_16_9",
+        "standard_4_3",
+        "square_1_1"
+      ]
+    }
+  }
+}

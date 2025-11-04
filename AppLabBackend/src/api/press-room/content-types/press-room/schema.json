@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "press_rooms",
+  "info": {
+    "singularName": "press-room",
+    "pluralName": "press-rooms",
+    "displayName": "Press Room"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pageTitle": {
+      "type": "string"
+    },
+    "pageDescription": {
+      "type": "text"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "text"
+    },
+    "mediaCard": {
+      "type": "component",
+      "component": "layout.media-card",
+      "repeatable": true
+    },
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "layout.features-section",
+        "layout.press-cards",
+        "layout.press-releases"
+      ]
+    },
+    "mediaContact": {
+      "type": "component",
+      "component": "layout.media-contact",
+      "repeatable": false
+    }
+  }
+}

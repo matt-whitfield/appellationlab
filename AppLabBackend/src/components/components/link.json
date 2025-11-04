@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_components_links",
+  "info": {
+    "displayName": "link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "isExternal": {
+      "type": "boolean",
+      "default": false
+    },
+    "socialType": {
+      "type": "enumeration",
+      "enum": [
+        "Instagram",
+        "Twitter_X",
+        "Facebook"
+      ]
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary"
+      ]
+    }
+  }
+}

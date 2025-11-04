@@ -4,4 +4,5 @@ export default ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
+  url: env('PUBLIC_URL', 'https://brilliant-flowers-733cf2e034.strapiapp.com'),
 });

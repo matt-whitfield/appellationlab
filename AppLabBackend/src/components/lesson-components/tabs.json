@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_lesson_components_tabs",
+  "info": {
+    "displayName": "Tabs",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tabTitle": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "scrollTimeline": {
+      "type": "component",
+      "repeatable": true,
+      "component": "lesson-components.story-scroll-timeline"
+    },
+    "textContent": {
+      "type": "blocks"
+    },
+    "videoEmbed": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.video-embed"
+    }
+  }
+}

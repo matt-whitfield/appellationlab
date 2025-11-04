@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_lesson_components_card_blocks",
+  "info": {
+    "displayName": "CardBlock",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "richText": {
+      "type": "blocks"
+    },
+    "singleMedia": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

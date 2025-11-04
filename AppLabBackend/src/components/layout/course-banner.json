@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_layout_course_banners",
+  "info": {
+    "displayName": "Course Banner"
+  },
+  "options": {},
+  "attributes": {
+    "courseDetails": {
+      "displayName": "Course Details",
+      "type": "component",
+      "repeatable": true,
+      "component": "components.course-details"
+    }
+  }
+}

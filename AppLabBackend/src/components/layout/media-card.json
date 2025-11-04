@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_layout_media_cards",
+  "info": {
+    "displayName": "Media Card"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "isExternal": {
+      "type": "boolean"
+    },
+    "icon": {
+      "type": "enumeration",
+      "default": "DEFAULT",
+      "enum": [
+        "GRAPH",
+        "FILE",
+        "PHOTO",
+        "AWARD",
+        "LEARN",
+        "STORY",
+        "DEFAULT"
+      ]
+    },
+    "linkText": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

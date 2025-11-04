@@ -2,6 +2,29 @@
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
 
+## 🔧 Environment Setup
+
+Before running the application, you need to set up your environment variables:
+
+1. Copy the example environment file:
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Fill in your actual values in the `.env` file:
+   - `APP_KEYS`: Generate secure app keys
+   - `API_TOKEN_SALT`: Generate a secure salt for API tokens
+   - `ADMIN_JWT_SECRET`: Generate a secure JWT secret for admin authentication
+   - `TRANSFER_TOKEN_SALT`: Generate a secure salt for transfer tokens
+   - `SENDGRID_API_KEY`: Your SendGrid API key for email functionality
+   - `JWT_SECRET`: Generate a secure JWT secret
+   - `PREVIEW_SECRET`: Generate a secure preview secret
+   - `CLIENT_URL`: Your frontend application URL
+
+3. For database configuration, uncomment and configure the database variables if using PostgreSQL in production.
+
+⚠️ **Security Note**: Never commit your `.env` files to version control. They contain sensitive information that should be kept secret.
+
 ### `develop`
 
 Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)

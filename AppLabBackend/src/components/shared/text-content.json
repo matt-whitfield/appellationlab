@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_lesson_components_text_contents",
+  "info": {
+    "displayName": "Text Content"
+  },
+  "options": {},
+  "attributes": {
+    "TextContent": {
+      "type": "blocks"
+    }
+  }
+}

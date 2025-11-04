@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_quiz_quiz_choices",
+  "info": {
+    "displayName": "QuizChoice"
+  },
+  "options": {},
+  "attributes": {
+    "answerOption": {
+      "type": "component",
+      "repeatable": true,
+      "component": "quiz.answer-option"
+    }
+  }
+}

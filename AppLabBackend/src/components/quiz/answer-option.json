@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_quiz_answer_options",
+  "info": {
+    "displayName": "AnswerOption"
+  },
+  "options": {},
+  "attributes": {
+    "optionId": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "isCorrect": {
+      "type": "boolean"
+    }
+  }
+}

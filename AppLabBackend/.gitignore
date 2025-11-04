@@ -121,7 +121,8 @@ coverage
 # Strapi
 ############################
 
-.env
+.env*
+!.env.example
 license.txt
 exports
 .strapi
@@ -129,3 +130,13 @@ dist
 build
 .strapi-updater.json
 .strapi-cloud.json
+sendgrid.env
+
+############################
+# Transfer logs and secrets
+############################
+
+transfer_*.log
+*.key
+*.pem
+secrets/

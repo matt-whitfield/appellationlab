@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_layout_materials",
+  "info": {
+    "displayName": "Materials"
+  },
+  "options": {},
+  "attributes": {
+    "files": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "link": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.link"
+    },
+    "additionalResources": {
+      "type": "blocks"
+    }
+  }
+}

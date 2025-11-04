@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_lesson_components_tab_bars",
+  "info": {
+    "displayName": "TabBar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "tabs": {
+      "displayName": "Tabs",
+      "type": "component",
+      "repeatable": true,
+      "component": "lesson-components.tabs"
+    }
+  }
+}

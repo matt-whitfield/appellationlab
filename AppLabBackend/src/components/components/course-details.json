@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_components_course_details",
+  "info": {
+    "displayName": "Course Details"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "Difficulty_Icon",
+        "Time_Icon",
+        "Cert_Icon"
+      ]
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.link"
+    }
+  }
+}

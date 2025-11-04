@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "singularName": "course",
+    "pluralName": "courses",
+    "displayName": "Course",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "lesson": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::lesson.lesson"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "difficulty": {
+      "type": "enumeration",
+      "enum": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ]
+    },
+    "certificate": {
+      "type": "boolean"
+    },
+    "tabs": {
+      "type": "dynamiczone",
+      "components": [
+        "layout.syllabus",
+        "layout.course-description",
+        "layout.materials"
+      ]
+    },
+    "course_enrollments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course-enrollment.course-enrollment",
+      "mappedBy": "course"
+    },
+    "isPublic": {
+      "type": "boolean",
+      "default": false
+    },
+    "requiresEnrollment": {
+      "type": "boolean",
+      "default": true
+    },
+    "final_exam": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::final-exam.final-exam",
+      "mappedBy": "course"
+    }
+  }
+}

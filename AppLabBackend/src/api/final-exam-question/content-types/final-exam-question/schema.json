@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "final_exam_questions",
+  "info": {
+    "singularName": "final-exam-question",
+    "pluralName": "final-exam-questions",
+    "displayName": "FinalExamQuestion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "exam": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::final-exam.final-exam",
+      "inversedBy": "questions"
+    },
+    "question": {
+      "type": "text"
+    },
+    "options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "quiz.answer-option"
+    },
+    "correctAnswer": {
+      "type": "string"
+    },
+    "explanation": {
+      "type": "text"
+    },
+    "sourceLesson": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::lesson.lesson"
+    },
+    "points": {
+      "type": "integer",
+      "default": 1
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

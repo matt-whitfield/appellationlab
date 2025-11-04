@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_layout_press_cards",
+  "info": {
+    "displayName": "Press Cards"
+  },
+  "options": {},
+  "attributes": {
+    "sectionHeading": {
+      "type": "string"
+    },
+    "mediaCard": {
+      "type": "component",
+      "component": "layout.media-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_layout_syllabi",
+  "info": {
+    "displayName": "syllabus"
+  },
+  "options": {},
+  "attributes": {
+    "lessons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::lesson.lesson"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

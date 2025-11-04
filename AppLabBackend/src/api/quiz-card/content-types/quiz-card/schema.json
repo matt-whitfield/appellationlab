@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quiz_cards",
+  "info": {
+    "singularName": "quiz-card",
+    "pluralName": "quiz-cards",
+    "displayName": "QuizCard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "explanation": {
+      "type": "text"
+    },
+    "hint": {
+      "type": "text"
+    },
+    "quizChoice": {
+      "displayName": "QuizChoice",
+      "type": "component",
+      "repeatable": true,
+      "component": "quiz.quiz-choice"
+    },
+    "lesson": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::lesson.lesson"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

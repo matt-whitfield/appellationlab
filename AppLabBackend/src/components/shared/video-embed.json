@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_lesson_components_video_embeds",
+  "info": {
+    "displayName": "Video Embed",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "videoUrl": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "autoplay": {
+      "type": "boolean",
+      "default": false
+    },
+    "controls": {
+      "type": "boolean",
+      "default": true
+    },
+    "aspectRatio": {
+      "type": "enumeration",
+      "enum": [
+        "widescreen_16_9",
+        "standard_4_3",
+        "square_1_1"
+      ],
+      "default": "widescreen_16_9"
+    }
+  }
+}

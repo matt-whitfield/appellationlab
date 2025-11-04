@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_layout_course_sections",
+  "info": {
+    "displayName": "Course-Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "cta": {
+      "type": "text"
+    },
+    "headingText": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.hero-section"
+    },
+    "courseBanner": {
+      "displayName": "Course Banner",
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.course-banner"
+    },
+    "keyLearningPoints": {
+      "displayName": "Key Learning Points",
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.key-learning-points"
+    }
+  }
+}

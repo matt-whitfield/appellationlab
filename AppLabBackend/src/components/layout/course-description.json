@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_layout_course_descriptions",
+  "info": {
+    "displayName": "course description"
+  },
+  "options": {},
+  "attributes": {
+    "overview": {
+      "type": "text"
+    },
+    "learningOutcomes": {
+      "type": "blocks"
+    },
+    "prerequisites": {
+      "type": "blocks"
+    },
+    "instructorNotes": {
+      "type": "blocks"
+    }
+  }
+}

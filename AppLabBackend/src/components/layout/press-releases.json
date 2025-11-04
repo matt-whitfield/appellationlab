@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_layout_press_releases",
+  "info": {
+    "displayName": "Press Releases"
+  },
+  "options": {},
+  "attributes": {
+    "sectionHeading": {
+      "type": "string"
+    },
+    "pressLink": {
+      "type": "component",
+      "component": "layout.article-link",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

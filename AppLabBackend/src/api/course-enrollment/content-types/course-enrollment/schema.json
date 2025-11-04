@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_enrollments",
+  "info": {
+    "singularName": "course-enrollment",
+    "pluralName": "course-enrollments",
+    "displayName": "Course Enrollment"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "course": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course.course",
+      "inversedBy": "course_enrollments"
+    },
+    "enrolledAt": {
+      "type": "datetime"
+    },
+    "courseStatus": {
+      "type": "enumeration",
+      "default": "active",
+      "enum": [
+        "active",
+        "completed",
+        "suspended"
+      ]
+    },
+    "progress": {
+      "type": "json"
+    },
+    "completedAt": {
+      "type": "datetime"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "course_enrollments"
+    },
+    "certificate": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::certificate.certificate",
+      "mappedBy": "course_enrollment"
+    },
+    "final_exam_attempts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::final-exam-attempt.final-exam-attempt",
+      "mappedBy": "course_enrollment"
+    },
+    "progressPercentage": {
+      "type": "integer"
+    }
+  }
+}

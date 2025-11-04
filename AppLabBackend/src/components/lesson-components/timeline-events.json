@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_lesson_components_timeline_events",
+  "info": {
+    "displayName": "timeline-events",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "year": {
+      "type": "biginteger"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "styledText": {
+      "type": "blocks"
+    }
+  }
+}

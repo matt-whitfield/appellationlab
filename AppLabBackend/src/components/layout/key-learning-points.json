@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_layout_key_learning_points",
+  "info": {
+    "displayName": "Key Learning Points"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "learningPoint": {
+      "displayName": "learningPoint",
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.learning-point"
+    }
+  }
+}

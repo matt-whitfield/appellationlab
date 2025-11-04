@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_layout_article_links",
+  "info": {
+    "displayName": "Article Link"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "string"
+    },
+    "publishDate": {
+      "type": "date"
+    },
+    "link": {
+      "type": "string"
+    },
+    "linkTitle": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

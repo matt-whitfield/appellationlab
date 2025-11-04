@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "admin_user_management",
+  "info": {
+    "singularName": "admin-user",
+    "pluralName": "admin-users",
+    "displayName": "Admin User Management",
+    "description": "Virtual content type for admin user management endpoints"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userType": {
+      "type": "string"
+    },
+    "data": {
+      "type": "json"
+    }
+  }
+}

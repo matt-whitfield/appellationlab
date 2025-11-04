@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_wine_map_varietals",
+  "info": {
+    "displayName": "Varietals"
+  },
+  "options": {},
+  "attributes": {
+    "red": {
+      "type": "enumeration",
+      "enum": [
+        "Cabernet Sauvignon",
+        "Merlot",
+        "Syrah"
+      ]
+    },
+    "white": {
+      "type": "enumeration",
+      "enum": [
+        "Chardonnay",
+        "Sauvignon Blanc",
+        "Riesling"
+      ]
+    }
+  },
+  "config": {}
+}

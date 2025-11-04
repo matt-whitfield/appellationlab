@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "admin_stats",
+  "info": {
+    "singularName": "admin-stat",
+    "pluralName": "admin-stats",
+    "displayName": "Admin Statistics",
+    "description": "Virtual content type for admin statistics endpoints"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "statType": {
+      "type": "string"
+    },
+    "data": {
+      "type": "json"
+    }
+  }
+}

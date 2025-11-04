@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vineyards",
+  "info": {
+    "singularName": "vineyard",
+    "pluralName": "vineyards",
+    "displayName": "Vineyard"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "uid": {
+      "type": "uid"
+    },
+    "planting": {
+      "type": "string"
+    },
+    "elevation": {
+      "type": "integer"
+    },
+    "website": {
+      "type": "string"
+    },
+    "wineries": {
+      "type": "component",
+      "component": "wine-map.key-wineries",
+      "repeatable": true
+    },
+    "redVarietals": {
+      "type": "component",
+      "component": "wine-map.red-varietals",
+      "repeatable": true
+    },
+    "whiteVarietals": {
+      "type": "component",
+      "component": "wine-map.red-varietals",
+      "repeatable": true
+    },
+    "geometry": {
+      "type": "json"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

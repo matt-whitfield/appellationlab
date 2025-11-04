@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "final_exams",
+  "info": {
+    "singularName": "final-exam",
+    "pluralName": "final-exams",
+    "displayName": "FinalExam",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "course": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::course.course"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "passingScore": {
+      "type": "integer"
+    },
+    "timeLimit": {
+      "type": "integer"
+    },
+    "maxAttempts": {
+      "type": "integer",
+      "default": 1
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": false
+    },
+    "questions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::final-exam-question.final-exam-question",
+      "mappedBy": "exam"
+    },
+    "final_exam_attempts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::final-exam-attempt.final-exam-attempt",
+      "mappedBy": "final_exam"
+    }
+  }
+}

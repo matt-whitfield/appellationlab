@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_layout_contact_infos",
+  "info": {
+    "displayName": "ContactInfo"
+  },
+  "options": {},
+  "attributes": {
+    "columnTitle": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "socialLinks": {
+      "type": "component",
+      "component": "components.link",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

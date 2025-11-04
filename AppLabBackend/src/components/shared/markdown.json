@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_markdowns",
+  "info": {
+    "displayName": "markdown"
+  },
+  "options": {},
+  "attributes": {
+    "markdownBlock": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}

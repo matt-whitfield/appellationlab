@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_layout_media_contacts",
+  "info": {
+    "displayName": "Media Contact"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

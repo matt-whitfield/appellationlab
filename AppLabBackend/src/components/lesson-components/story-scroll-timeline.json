@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_lesson_components_story_scroll_timelines",
+  "info": {
+    "displayName": "storyScrollTimeline",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "events": {
+      "displayName": "timeline-events",
+      "type": "component",
+      "repeatable": true,
+      "component": "lesson-components.timeline-events"
+    },
+    "Heading": {
+      "type": "string"
+    }
+  }
+}
